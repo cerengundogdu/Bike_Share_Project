@@ -13,6 +13,15 @@ days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday
 options = ['none', 'day', 'month', 'both']
 
 def get_filters():
+
+    '''This function helps to get filters regarding the city and time (day or month or both) that the user wants to analyze
+
+        Returns:
+        city - name of the city to analyze
+        month - name of the month to filter by, or "all" to apply no month filter
+        day - name of the day of week to filter by, or "all" to apply no day filter
+   
+    '''
     
     print('Hello! Let\'s explore some US bikeshare data! \n')
     
