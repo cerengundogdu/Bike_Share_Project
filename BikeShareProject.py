@@ -13,9 +13,16 @@ days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday
 options = ['none', 'day', 'month', 'both']
 
 def get_filters():
-    """
-    this function get the filters for city, month and day.
-    """
+
+    '''This function helps to get filters regarding the city and time (day or month or both) that the user wants to analyze
+
+        Returns:
+        city - name of the city to analyze
+        month - name of the month to filter by, or "all" to apply no month filter
+        day - name of the day of week to filter by, or "all" to apply no day filter
+   
+    '''
+    
     print('Hello! Let\'s explore some US bikeshare data! \n')
     
     city = input('Please type the city name that you would like to see. Chicago, New York, or Washington? \n').lower()
@@ -90,6 +97,18 @@ def get_filters():
 
 
 def load_data(city, month, day):
+
+    '''This function loads data according to the filters chisen by the user
+       
+        Args:
+        city - name of the city to analyze
+        month - name of the month to filter by, or "all" to apply no month filter
+        day - name of the day of week to filter by, or "all" to apply no day filter
+
+        Returns:
+        df: dataframe of bikeshare data
+   
+    '''
     
     df = pd.read_csv(CITY_DATA[city])
     
@@ -134,6 +153,18 @@ def time_stats(df):
 
 def station_stats(df):
 
+    '''This function calculates the statistics regarding the stations
+       
+        Args:
+        df: dataframe of bikeshare data
+
+        Returns:
+
+        the most common starting station according to the filter
+        the most common end station according to the filter
+        the most frequent combination of start station and end station trip according to the filter
+   
+    '''
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
