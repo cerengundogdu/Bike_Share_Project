@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+This project created on 04/27/2020
 
 ### Project Title
-Replace the Project Title
+Bike Share Statistics, Udacity Programming for Data Science with Python Nanodegree
 
 ### Description
-Describe what your project is about and what it does
+This project contains a interactive script to  to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. By filtering the data, the script gives some descriptive statistics regarding the usage of bike sharing.
 
 ### Files used
-Include the files used
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
 
