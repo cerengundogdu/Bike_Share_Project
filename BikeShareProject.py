@@ -13,7 +13,9 @@ days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday
 options = ['none', 'day', 'month', 'both']
 
 def get_filters():
-    
+    """
+    this function get the filters for city, month and day.
+    """
     print('Hello! Let\'s explore some US bikeshare data! \n')
     
     city = input('Please type the city name that you would like to see. Chicago, New York, or Washington? \n').lower()
