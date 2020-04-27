@@ -153,6 +153,18 @@ def time_stats(df):
 
 def station_stats(df):
 
+    '''This function calculates the statistics regarding the stations
+       
+        Args:
+        df: dataframe of bikeshare data
+
+        Returns:
+
+        the most common starting station according to the filter
+        the most common end station according to the filter
+        the most frequent combination of start station and end station trip according to the filter
+   
+    '''
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
