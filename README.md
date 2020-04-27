@@ -1,6 +1,9 @@
 ### Date created
 This project created on 04/27/2020 and submitted on 04/28/2020
 
+### Author
+Ceren Gundogdu 
+
 ### Project Title
 Bike Share Statistics, Udacity Programming for Data Science with Python Nanodegree
 
