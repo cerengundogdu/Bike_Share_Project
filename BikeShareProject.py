@@ -97,6 +97,18 @@ def get_filters():
 
 
 def load_data(city, month, day):
+
+    '''This function loads data according to the filters chisen by the user
+       
+        Args:
+        city - name of the city to analyze
+        month - name of the month to filter by, or "all" to apply no month filter
+        day - name of the day of week to filter by, or "all" to apply no day filter
+
+        Returns:
+        df: dataframe of bikeshare data
+   
+    '''
     
     df = pd.read_csv(CITY_DATA[city])
     
